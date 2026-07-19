@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Practice</title>
+</head>
+<body>
+    <h1>Advanced JS - setInterval</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayHi = function(str){
+        console.log("Hi "+str, Date.now());
+    }
+
+    // Initialized variable outside because of scope, we need it for stop as well
+    let myInterval = null;
+    document.querySelector("#start").addEventListener("click", function(){
+        if(!myInterval){
+            myInterval = setInterval(sayHi , 2000, "Izza");
+            // If condition so that clicking Start repeatedly doesn't create multiple intervals. 
+        }
+    });
+
+    document.querySelector("#stop").addEventListener("click", function(){
+        clearInterval(myInterval);
+    });
+</script>
+</html>
