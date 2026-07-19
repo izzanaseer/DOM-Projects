@@ -1,36 +1,58 @@
-# ⏱️ JavaScript `setInterval()` Practice
+# 📘 Advanced JavaScript Practice
 
-A simple JavaScript practice project to understand how `setInterval()` and `clearInterval()` work with DOM events.
+This folder contains small JavaScript practice projects focused on understanding asynchronous programming, timers, and working with APIs.
 
-## 📖 Overview
+## 📂 Projects
 
-This project contains two buttons:
+### 1. `setInterval.html`
 
-- **Start** → Starts printing a message to the console every 2 seconds.
-- **Stop** → Stops the interval.
+A simple project demonstrating how to start and stop a repeating task using JavaScript timer functions.
 
-It is a small exercise to practice controlling timers using JavaScript.
+**Features**
 
-## 🚀 Concepts Practiced
+- Start an interval that logs a message every 2 seconds.
+- Stop the interval with a button click.
+
+**Concepts Covered**
 
 - `setInterval()`
 - `clearInterval()`
 - Event Listeners
-- DOM Selection using `querySelector()`
+- DOM Manipulation
 - Variable Scope
-- Callback Functions
 
-## Project Structure
+---
 
-```
-setInterval-practice/
+### 2. `apiRequest.html`
+
+A project that fetches data from the GitHub Users API and dynamically displays a user's profile information in a styled card.
+
+**Features**
+
+- Fetch GitHub user data using `XMLHttpRequest`
+- Display the user's avatar, name, and follower count
+- Dynamically update the webpage using JavaScript
+
+**Concepts Covered**
+
+- `XMLHttpRequest`
+- Working with JSON APIs
+- `JSON.parse()`
+- DOM Manipulation
+- Template Literals
+
+## 📁 Project Structure
+
+```text
+Advanced JS/
 │── setInterval.html
+│── apiRequest.html
 └── README.md
 ```
 
-## How to Run
+## ▶️ How to Run
 
-1. Clone this repository.
+1. Clone the repository.
 
 ```bash
 git clone https://github.com/izzanaseer/JS_Advanced.git
@@ -38,22 +60,8 @@ git clone https://github.com/izzanaseer/JS_Advanced.git
 
 2. Open the project folder.
 
-3. Open `setInterval.html` in your browser.
+3. Open any HTML file in your browser to run the corresponding project.
 
-4. Open the browser's **Developer Console** (`F12` → Console).
+## 📚 Learning Goal
 
-5. Click **Start** to begin logging messages every 2 seconds.
-
-6. Click **Stop** to stop the interval.
-
-## Example Output
-
-```
-Hi Izza 1721393020456
-Hi Izza 1721393022458
-Hi Izza 1721393024460
-```
-
-## Learning Goal
-
-This project was built as part of my JavaScript learning journey to better understand timer functions and event-driven programming.
+These projects were built as part of my JavaScript learning journey to strengthen my understanding of asynchronous JavaScript, browser APIs, and DOM manipulation.
